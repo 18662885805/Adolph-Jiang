@@ -1,0 +1,20 @@
+{
+  "name": "efms-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "fucking-util": "^0.3.0",
+    "fucking-util-signature-all": "^0.1.1",
+    "jsdom": "^15.2.1",
+    "jsencrypt": "^3.0.0-rc.1",
+    "moment": "^2.24.0"
+  }
+}

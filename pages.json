@@ -1,0 +1,94 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "EFMS",
+				"navigationBarBackgroundColor":"#174264",
+				"navigationBarTextStyle":"#fff"
+			}
+		},
+		{
+			"path": "pages/card/index",
+			"style": {
+				"navigationBarTitleText": "卡证查询",
+				"navigationBarBackgroundColor":"#174264",
+				"navigationBarTextStyle":"#fff"
+			}
+		},
+		{
+			"path": "pages/new_carryout/index",
+			"style": {
+				"navigationBarTitleText": "物品携出",
+				"navigationBarBackgroundColor":"#174264",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/scan/index",
+			"style": {
+				"navigationBarTitleText": "物品携出",
+				"navigationBarBackgroundColor":"#174264",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/account/index",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarBackgroundColor":"#174264",
+				"navigationBarTextStyle":"white"
+			}
+		},
+		{
+			"path": "pages/login/index",//登录页
+			"style": {
+				"navigationStyle": "custom",
+				//导航栏样式，仅支持 default/custom。custom即取消默认的原生导航栏，需看使用注意
+				//当navigationStyle设为custom或titleNView设为false时，原生导航栏不显示
+				"app-plus": {
+					"titleNView": false,
+					"animationType": "slide-in-bottom"
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",//导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+		"navigationBarTitleText": "MJK",//导航栏标题文字内容
+		"navigationBarBackgroundColor": "#F7F7F7",//导航栏背景颜色（同状态栏背景色）
+		"backgroundColor": "#f8f8f8"
+	},
+	"tabBar": {
+		"color": "#C0C4CC",
+		"selectedColor": "#174264",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home-a.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/scan/index",
+				"iconPath": "static/carryout.png",
+				"selectedIconPath": "static/carryout-a.png",
+				"text": "物品携出"
+			}, 
+			{
+				"pagePath": "pages/card/index",
+				"iconPath": "static/card.png",
+				"selectedIconPath": "static/card-a.png",
+				"text": "卡证查询"
+			}, 
+			{
+				"pagePath": "pages/account/index",
+				"iconPath": "static/account.png",
+				"selectedIconPath": "static/account-a.png",
+				"text": "我的"
+			}
+		]
+	}
+}
